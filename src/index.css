@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-condensed-par {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-flex-link {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer components {
+  .btn-primary {
+    @apply roboto-flex-link font-bold py-2 px-4 border rounded-md border-primary  text-white bg-primary hover:bg-primaryhover hover:border-primaryhover focus:ring-4 focus:ring-blue-300;
+  }
+  .btn-outline {
+    @apply roboto-flex-link font-bold py-2 px-4 border rounded-md border-primary  text-primary bg-transparent hover:bg-primary hover:border-primary hover:text-white focus:ring-4 focus:ring-blue-300;
+  }
+  .link {
+    @apply hover:underline hover:text-primary;
+  }
+  :root {
+    @apply text-textcolor;
+  }
+  .blue-text {
+    @apply text-primary roboto-condensed-par  text-blueTextSize;
+  }
+}
