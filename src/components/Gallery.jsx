@@ -1,11 +1,12 @@
 import Carousel from "./Carousel";
+
 const slides = [
-  { id: 1, path: "src/assets/images-2.png" },
-  { id: 2, path: "src/assets/images-1.png" },
-  { id: 3, path: "src/assets/images.png" },
-  { id: 4, path: "src/assets/images-2.png" },
-  { id: 5, path: "src/assets/images-1.png" },
-  { id: 6, path: "src/assets/images.png" },
+  { id: 1, path: "/images-2.png" },
+  { id: 2, path: "/images-1.png" },
+  { id: 3, path: "/images.png" },
+  { id: 4, path: "/images-2.png" },
+  { id: 5, path: "/images-1.png" },
+  { id: 6, path: "/images.png" },
 ];
 
 function Gallery() {
